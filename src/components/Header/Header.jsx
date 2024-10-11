@@ -1,46 +1,89 @@
-import React, { useState } from 'react'
-import "./Header.scss"
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import './Header.scss';
+import Select from 'react-select';
+
+const languageOptions = [
+  { value: 'en', label: 'English' },
+  { value: 'ru', label: 'Russian' },
+  { value: 'uz', label: 'Uzbek' },
+];
 
 const Header = () => {
 
-const [menuOpen, setMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false)
+  const [isBurgerX, setIsBurgerX] = useState(false)
 
-  const handleMenuToggle = () => {
-    setMenuOpen(!menuOpen);
+  const changeLanguage = (selectedOption) => {
+    i18n.changeLanguage(selectedOption.value);
   };
+
+
+    const toggleBurger = () => {
+        toggleBurgerX()
+        toggleMenu()
+    }
+
+    const toggleMenu = () => {
+        setIsOpen(prev => !prev)
+    }
+
+    const toggleBurgerX = () => {
+        setIsBurgerX(prev => !prev)
+    }
+
+    const toggleCloseMenu = () => {
+        toggleBurger()
+    }
 
   return (
     <>
-    <section className="header">
+      <section className="header">
         <div className="container">
-            <div className="header__wrapper">
-                <ul className="header__ul">
-                    <a href="#">About</a>
-                    <a href="#">Price</a>
-                    <a href="#">Advantages</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Contacts</a>
-                </ul>
-                <h1>LOGO</h1>
-                <button className='header__btn'>+998910010657</button>
+          <div className="header__wrapper">
+            <h1>LOGO</h1>
 
-                <button className="header__menu__toggle" onClick={handleMenuToggle}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul className={menuOpen ? 'header__menuOpen' : ''}>
-                    <a href="#">About</a>
-                    <a href="#">Price</a>
-                    <a href="#">Advantages</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Contacts</a>
-                </ul>
+            <ul className="header__ul">
+              <a href='#'>{t('about')}</a>
+              <a href='#'>{t('price')}</a>
+              <a href='#'>{t('advantages')}</a>
+              <a href='#'>{t('gallery')}</a>
+              <a href='#'>{t('contacts')}</a>
+            </ul>
+
+            <div className="header__select-wrapper">
+              <Select
+                options={languageOptions}
+                defaultValue={languageOptions[0]}
+                onChange={changeLanguage}
+                classNamePrefix="custom-select"
+              />
             </div>
-        </div>
-    </section>
-    </>
-  )
-}
 
-export default Header
+            <button
+              onClick={toggleBurger}
+              className={isBurgerX ? 'header__burger active' : 'header__burger'}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div className={isOpen ? 'header__menu active' : 'header__menu'}>
+              <ul className="header__ul-burger">
+                <a href='#'>About</a>
+                <a href='#'>Price</a>
+                <a href='#'>Advantages</a>
+                <a href='#'>Gallery</a>
+                <a href='#'>Contacts</a>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Header;
