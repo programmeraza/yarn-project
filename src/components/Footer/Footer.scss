@@ -1,0 +1,81 @@
+.footer {
+  border-top: 1px solid black;
+  background-color: aliceblue;
+  padding: clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem) 0;
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 15px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @media (max-width: 600px) {
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);
+      font-weight: 700;
+    }
+    p {
+      font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+      font-weight: 400;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      a {
+        color: black;
+        font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__cards {
+    display: none;
+    @media (max-width: 600px) {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    max-width: clamp(12.5rem, 5.682rem + 34.09vw, 31.25rem);
+    width: 100%;
+    @media (max-width: 600px) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__icon {
+    color: black;
+    font-size: 25px;
+    width: 25px;
+  }
+}
+
+.none {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}

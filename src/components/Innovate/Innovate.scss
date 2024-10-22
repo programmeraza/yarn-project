@@ -1,0 +1,40 @@
+.innovate {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/innovatebg.png);
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+    gap: 40px 10px;
+    padding: 120px 0;
+    width: 100%;
+
+    @media (max-width:1090px) {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    @media (max-width: 735px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px 0 40px 0;
+    }
+  }
+
+  &__number {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: clamp(1.625rem, 1.261rem + 1.82vw, 2.625rem);
+    font-weight: 600;
+    margin: 0 auto;
+    @media (max-width: 1196px) {
+      width: 200px;
+    }
+  }
+}

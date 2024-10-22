@@ -1,0 +1,32 @@
+.empower {
+   background-image: url(/img/empowerbg.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 500px;
+   width: 100%;
+   padding: 120px 0;
+  &__wrapper {
+   margin: 0 auto;
+    display: flex;
+   //  align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 969px;
+    width: 100%;
+  }
+  &__title {
+    color: #fff;
+    font-size: clamp(1.875rem, 1.602rem + 1.36vw, 2.625rem);
+    font-style: normal;
+    font-weight: 700;
+    text-shadow: 3px 0px 3px #0000007d;
+  }
+  &__text {
+    color: #fff;
+    font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 5px 3px 5px #000;
+  }
+}

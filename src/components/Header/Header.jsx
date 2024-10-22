@@ -45,11 +45,11 @@ const Header = () => {
             <h1>LOGO</h1>
 
             <ul className="header__ul">
-              <a href='#'>{t('about')}</a>
-              <a href='#'>{t('price')}</a>
-              <a href='#'>{t('advantages')}</a>
-              <a href='#'>{t('gallery')}</a>
-              <a href='#'>{t('contacts')}</a>
+              <a href='#about'>{t('about')}</a>
+              <a href='#price'>{t('price')}</a>
+              <a href='#advantages'>{t('advantages')}</a>
+              <a href='#gallery'>{t('gallery')}</a>
+              <a href='#contacts'>{t('contacts')}</a>
             </ul>
 
             <div className="header__select-wrapper">
@@ -71,11 +71,11 @@ const Header = () => {
 
             <div className={isOpen ? 'header__menu active' : 'header__menu'}>
               <ul className="header__ul-burger">
-                <a href='#'>About</a>
-                <a href='#'>Price</a>
-                <a href='#'>Advantages</a>
-                <a href='#'>Gallery</a>
-                <a href='#'>Contacts</a>
+                <a href='#about' onClick={toggleCloseMenu}>{t('about')}</a>
+                <a href='#price' onClick={toggleCloseMenu}>{t('price')}</a>
+                <a href='#advantages' onClick={toggleCloseMenu}>{t('advantages')}</a>
+                <a href='#gallery' onClick={toggleCloseMenu}>{t('gallery')}</a>
+                <a href='#contacts' onClick={toggleCloseMenu}>{t('contacts')}</a>
               </ul>
             </div>
 

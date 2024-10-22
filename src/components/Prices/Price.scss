@@ -1,0 +1,67 @@
+.price {
+  padding: clamp(6.25rem, 5.114rem + 5.68vw, 9.375rem) 0;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+  &__name {
+    color: #3a5bcc;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__title {
+    color: #000;
+    text-align: center;
+    font-size: clamp(1.625rem, 1.398rem + 1.14vw, 2.25rem);
+    font-weight: 700;
+  }
+  &__text {
+    max-width: 800px;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-size: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem);
+    font-weight: 400;
+  }
+  &__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 10px;
+    @media (max-width: 1080px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
+  &__card {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    &_name {
+      color: #000;
+      text-align: center;
+      font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+      font-weight: 400;
+    }
+  }
+  &__img {
+    height: clamp(15.625rem, 14.489rem + 5.68vw, 18.75rem);
+    width: 100%;
+  }
+  &__price {
+    color: #000;
+    text-align: center;
+    font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+    font-weight: 400;
+  }
+}

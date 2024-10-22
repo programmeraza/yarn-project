@@ -12,7 +12,10 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
     },
     interpolation : {
         escapeValue : false
-    }
+    },
+    backend: {
+        loadPath: '/locales/{{lng}}/{{ns}}.json', // путь к файлам с переводами
+    },
 })
 
 export default i18n;
