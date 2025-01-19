@@ -29,19 +29,19 @@ const Swipper = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src="/img/card1.png" alt="1" />
+            <img src="/img/card1.webp" alt="1" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/img/card2.png" alt="2" />
+            <img src="/img/card2.webp" alt="2" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/img/card3.png" alt="3" />
+            <img src="/img/card3.webp" alt="3" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/img/card1.png" alt="4" />
+            <img src="/img/card4.webp" alt="4" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/img/card2.png" alt="5" />
+            <img src="/img/card5.webp" alt="5" />
           </SwiperSlide>
         </Swiper>
       </div>

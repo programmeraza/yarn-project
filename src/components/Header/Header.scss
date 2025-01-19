@@ -4,8 +4,15 @@
     top: 0;
     z-index: 100;
     background-color: #fff;
-    padding: 30px 0;
+    padding: 10px 0;
     box-shadow: 0px 9px 18px -10px rgba(0,0,0,0.68);
+
+    &__img {
+        width: 150px;
+        @media (max-width: 425px) {
+            width: 80px;
+        }
+    }
 
     &__wrapper {
         display: flex;

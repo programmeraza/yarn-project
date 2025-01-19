@@ -17,6 +17,7 @@
     img {
       width: 100%;
       height: clamp(12.5rem, 5.682rem + 34.09vw, 31.25rem);
+      object-fit: cover;
     }
     @media (max-width: 768px) {
       display: flex;

@@ -42,7 +42,7 @@ const Header = () => {
       <section className="header">
         <div className="container">
           <div className="header__wrapper">
-            <h1>LOGO</h1>
+            <img src="/img/logo1.png" className='header__img' alt="" />
 
             <ul className="header__ul">
               <a href='#about'>{t('about')}</a>

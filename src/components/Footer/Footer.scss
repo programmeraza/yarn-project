@@ -21,6 +21,10 @@
     gap: 15px;
     @media (max-width: 600px) {
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
     h1 {
       font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);

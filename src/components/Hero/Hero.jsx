@@ -22,8 +22,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="hero__images">
-              <img src="/img/herobg.png" alt="broken" className="hero__img" />
-              <img src="/img/card1.png" alt="broken" className="absolute" />
+              <img src="/img/herobg.avif" alt="broken" className="hero__img" />
             </div>
           </div>
         </div>

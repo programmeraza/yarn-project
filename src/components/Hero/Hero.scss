@@ -1,4 +1,5 @@
 .hero {
+  margin-top: 50px;
   padding: 100px 0;
   &__wrapper {
     display: grid;
@@ -13,6 +14,7 @@
       justify-content: center;
       flex-direction: column-reverse;
       text-align: center;
+      gap: 20px;
     }
   }
 
@@ -34,10 +36,12 @@
   &__texts {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     @media (max-width: 1000px) {
       text-align: center;
       justify-content: center;
       align-items: center;
+      gap: 20px;
     }
   }
   &__title {

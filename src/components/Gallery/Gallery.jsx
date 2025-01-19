@@ -97,11 +97,11 @@ const Gallery = () => {
       <div className="carusel" ref={caruselRef}>
         <div id="drag-container" ref={dragContainerRef}>
           <div id="spin-container" ref={spinContainerRef}>
-            <img src="/img/card1.png" alt="1" />
-            <img src="/img/card2.png" alt="2" />
-            <img src="/img/card3.png" alt="3" />
-            <img src="/img/card1.png" alt="4" />
-            <img src="/img/card2.png" alt="5" />
+            <img src="/img/card4.webp" alt="1" />
+            <img src="/img/card2.webp" alt="2" />
+            <img src="/img/card3.webp" alt="3" />
+            <img src="/img/card1.webp" alt="4" />
+            <img src="/img/card5.webp" alt="5" />
           </div>
         </div>
       </div>

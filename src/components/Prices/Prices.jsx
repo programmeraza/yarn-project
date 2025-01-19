@@ -20,28 +20,35 @@ const Prices = () => {
             <p className="price__text">{t("pricestext")}</p>
             <div className="price__cards">
               <div className="price__card">
-                <img src="/img/card1.png" alt="broken" className="price__img" />
+                <img src="/img/card1.webp" alt="broken" className="price__img" />
                 <h3 className="price__card_name">{t("pricescard1name")}</h3>
-                <h5 className="price__price">{t("pricescard1price")}</h5>
               </div>
 
               <div className="price__card">
-                <img src="/img/card2.png" alt="broken" className="price__img" />
+                <img src="/img/card7.jpg" alt="broken" className="price__img" />
+                <h3 className="price__card_name">{t("pricescard6name")}</h3>
+              </div>
+
+              <div className="price__card">
+                <img src="/img/card2.webp" alt="broken" className="price__img" />
                 <h3 className="price__card_name">{t("pricescard2name")}</h3>
-                <h5 className="price__price">{t("pricescard2price")}</h5>
               </div>
 
               <div className="price__card">
-                <img src="/img/card3.png" alt="broken" className="price__img" />
+                <img src="/img/card8.jpg" alt="broken" className="price__img" />
+                <h3 className="price__card_name">{t("pricescard5name")}</h3>
+              </div>
+
+              <div className="price__card">
+                <img src="/img/card3.webp" alt="broken" className="price__img" />
                 <h3 className="price__card_name">{t("pricescard3name")}</h3>
-                <h5 className="price__price">{t("pricescard3price")}</h5>
               </div>
 
               <div className="price__card">
-                <img src="/img/card4.png" alt="broken" className="price__img" />
+                <img src="/img/card5.webp" alt="broken" className="price__img" />
                 <h3 className="price__card_name">{t("pricescard4name")}</h3>
-                <h5 className="price__price">{t("pricescard4price")}</h5>
               </div>
+
             </div>
           </div>
         </div>

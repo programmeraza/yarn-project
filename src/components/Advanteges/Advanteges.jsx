@@ -26,10 +26,10 @@ const Advanteges = () => {
                 </p>
                 <a href="#contacts">{t('adv1btn')}</a>
               </div>
-              <img src="/img/advantages1.png" alt="broken" />
+              <img src="/img/innovatebg.webp" alt="broken" />
             </div>
             <div className="advanteges__card second">
-              <img src="/img/advantages2.png" alt="broken" />
+              <img src="/img/matrasi.jpg" alt="broken" />
               <div className="advanteges__texts">
                 <h1>02</h1>
                 <h4>{t('adv2name')}</h4>

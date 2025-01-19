@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer__wrapper">
             <div className="footer__card">
-              <h1>logo</h1>
+              <img src="/img/logo1.png" width={200} alt="" />
               <p className="footer__description">{t("footertext")}</p>
             </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
 
             <div className="footer__card none">
               <h1>{t("footercard2")}</h1>
-              <p>+998 99 999 77 77</p>
+              <p>+998 97 409 08 60</p>
               <div className="footer__icons">
                 <a href="https://t.me/pryaji_bot">
                   <FaTelegramPlane className="footer__icon" />
@@ -62,7 +62,7 @@ const Footer = () => {
 
               <div className="footer__card">
                 <h1>{t("footercard2")}</h1>
-                <p>+998 99 999 77 77</p>
+                <p>+998 97 409 08 60</p>
                 <div className="footer__icons">
                   <a href="https://t.me/pryaji_bot">
                     <FaTelegramPlane className="footer__icon" />
